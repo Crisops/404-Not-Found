@@ -1,2 +1,2 @@
 # 404-Not-Found
-Diseño pagina HTPPS ERROR 404
+Diseño para página código de estado ERROR 404
