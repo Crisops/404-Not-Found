@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+/*
+font-family: 'Inconsolata', monospace;
+font-family: 'Space Mono', monospace;
+*/
+
+body{
+  padding: 20px 5% 60px;
+  height: 100vh;
+}
+
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: inherit;
+  height: calc(100vh - 80px);
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.gridContainer .boxContent{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gridContainer .boxContent h2{
+  position: absolute;
+  top: -30%;
+  left: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.gridContainer .boxContent .boxImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContainer .boxContent .boxImg img{
+  width: 70%;
+}
+
+.gridContainer .BoxContentMessage{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.gridContainer .BoxContentMessage .boxTitleMessage{
+  max-width: 70%;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 2rem;
+}
+
+.gridContainer .BoxContentMessage h1{
+  font-size: 4rem;
+  font-family: 'Space Mono', monospace
+}
+
+.gridContainer .BoxContentMessage .boxContentMessageError{
+  max-width: 35%;
+  margin-bottom: 3rem;
+}
+
+.gridContainer .BoxContentMessage .boxContentMessageError p{
+  text-align: left;
+  color: #333333;
+  font-size: 1.1rem;
+  font-family: 'Space Mono', monospace;
+  line-height: 30px;
+}
+
+.gridContainer .BoxContentMessage a{
+  color: #fff;
+  padding: 20px 20px;
+  background: #333333;
+  font-size: 1rem;
+  font-family: 'Space Mono', monospace;
+  text-transform: uppercase;
+ 
+}
+
+
+
+@media (max-width: 1500px){
+
+
+  .gridContainer .boxContent h2 {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  .gridContainer .BoxContentMessage .boxTitleMessage {
+    max-width: 100%;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 2rem;
+  }
+
+  .gridContainer .boxContent .boxImg img{
+    width: 90%;
+  }
+
+  .gridContainer .BoxContentMessage .boxContentMessageError {
+  max-width: 65%;
+  margin-bottom: 3rem;
+  } 
+  
+}
+
+
+@media (max-width: 1300px){
+
+
+  .gridContainer .boxContent h2 {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333333;
+  }
+
+  .gridContainer .BoxContentMessage .boxTitleMessage {
+    max-width: 100%;
+    text-align: left;
+    color: #333333;
+    margin-bottom: 2rem;
+  }
+
+  .gridContainer .boxContent .boxImg img{
+    width: 90%;
+  }
+
+  .gridContainer .BoxContentMessage .boxContentMessageError {
+  max-width: 65%;
+  margin-bottom: 3rem;
+  }
+  
+}
+
+
+
+@media (max-width: 1000px){
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+  .gridContainer .boxContent h2 {
+    top: 0;
+  }
+  .gridContainer .BoxContentMessage .boxTitleMessage {
+    max-width: 100%;
+  }
+  .gridContainer .BoxContentMessage h1 {
+    font-size: 3.2rem;
+  }
+
+  .gridContainer .BoxContentMessage .boxContentMessageError {
+    max-width: 70%;
+    margin-bottom: 3rem;
+  }
+  .gridContainer .BoxContentMessage .boxContentMessageError p {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 700px){
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .gridContainer .boxContent h2 {
+    top: 0;
+  }
+
+  .gridContainer .BoxContentMessage .boxTitleMessage{
+    max-width: 100%;
+  }
+  .gridContainer .BoxContentMessage h1 {
+    font-size: 2.5rem;
+  }
+
+  .gridContainer .BoxContentMessage .boxContentMessageError {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px){
+  
+
+  .gridContainer .boxContent h2 {
+    top: -0;
+    font-size: 1.2rem;
+  }
+
+  .gridContainer .boxContent .boxImg img{
+    width: 90%;
+  }
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .gridContainer .BoxContentMessage .boxTitleMessage {
+    max-width: 100%;
+  }
+
+  .gridContainer .BoxContentMessage h1 {
+    font-size: 2.8rem;
+  }
+
+  .gridContainer .BoxContentMessage .boxContentMessageError {
+    max-width: 100%;
+  }
+
+  .gridContainer .BoxContentMessage .boxContentMessageError p {
+    font-size: 1rem;
+  }
+
+}
+
+
+@media (max-width: 300px){
+  
+  .gridContainer .boxContent h2 {
+    top: -0;
+    font-size: 1rem;
+  }
+
+  .gridContainer .BoxContentMessage h1 {
+    font-size: 2rem;
+  }
+
+}
